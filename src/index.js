@@ -88,6 +88,12 @@ let author='Roger Millers';*/
 let Image='https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR8CTqrSxpEEvaPBRFxPqLCdzlvWJkOw5gCB3Ha4kDoJXDI9eGvYudkjIt4wmHkszjBW30X-iDoc9hym8YwA5-F-A2Qs-dDUWT5eoE7xNKAEyoJkhK5TNsRwchHOWfl5A&usqp=CAc';
 
 //This Applies when we Need an Update to synshronize on all of them
+const Handler=()=>{
+  alert("Good Morning Dear Client, How you have Enjoyed");
+}
+const Hover=()=>{
+  alert('Thanks for KIndly Checking on our Web Site dear our Beloved Client');
+}
 let Book=(props)=>{
   return(
     <div>
@@ -95,6 +101,8 @@ let Book=(props)=>{
        <h4>{props.Title}</h4>
        <p >{props.Author}</p>
        <p>{props.children}</p>
+       <button onClick={Handler}>Greetings</button>
+       <h6 onMouseOver={Hover}>Check</h6>
     </div>
   )
 }
